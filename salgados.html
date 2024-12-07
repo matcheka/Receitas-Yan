@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salgados | CookBook</title>
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
+<link rel="stylesheet" href="style.css"> <!--Link do css-->
+<script src="main.js" type="text/JavaScript" defer></script>
+
+<!--jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <center>
+        <menu>
+        <a class="menu-itens" href="index.html">Página Principal</a>
+        <a class="menu-itens" href="doces.html">Receitas Doces</a>
+        </menu>
+    <h1 id="titulo1">Receitas Salgadas</h1>
+    </center>
+    <br>
+    <div class="caixa1">
+        <img src="salgados/muffin.jpg" alt="Imagem de Muffins de Abobrinha">
+        <div>
+        <h2>Muffin Salgado de Abobrinha</h2>
+        <h3>Ingredientes</h3>
+        <p>15 minutos | 8 porções</p>
+    <ul>
+        <li>400g abobrinha cortada em cubos</li>
+        <li>1 ovo</li>
+        <li>60g farinha trigo</li>
+        <li>1 col chá fermento em pó</li>
+        <li>10 folhas manjericão picadas</li>
+        <li>100g parmesão ralado</li>
+        <li>Temperos para abobrinha : sal e pimenta</li>
+    </ul>
+    </div>
+    </div>
+    <div class="caixa1">
+        <div>
+        <h3>Instruções de cozinha</h3>
+    <ol>
+        <li>Cozinhe as abobrinhas no vapor e escorra bem.</li>
+        <li>Adicione o ovo, a farinha, fermento sal e pimenta e as folhas de manjericão.</li>
+        <li>Misture bem todos os ingredientes.</li>
+        <li>Despeje a mistura em forminhas de empada ou as forminhas de silicone que não grudam.</li>
+        <li>Leve ao forno 180 graus por 15 minutos ou até que a superfície fique dourada. Espere esfriar para desenformar e pronto!</li>
+    </ol>
+    </div>
+    <div>
+    <p>Confira a releitura deste prato no vídeo abaixo!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6211wSI9r1E?si=sswfCrG3bg5Xf76l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+    <br>
+    <center>
+    <table>
+    <thead>
+        <tr>
+            <th>Ingrediente</th>
+            <th>Quantidade</th>
+            <th>Link de Compra</th>
+            <th>Preço</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Abobrinha</td>
+            <td><input type="number" placeholder="Quantidade" id="qtd1"></td>
+            <td>
+                <a href="https://www.superpaguemenos.com.br/abobora-italia-kg/p">Comprar</a>
+            </td>
+            <td id="pr1">R$6,99</td>
+            <td id="tot1"></td>
+        </tr>
+        <tr>
+            <td>Ovos</td>
+            <td><input type="number" placeholder="Quantidade" id="qtd2"></td>
+            <td>
+                <a href="https://www.superpaguemenos.com.br/ovos-brancos-extra-satoshi-com-20-unidades/p">Comprar</a>
+            </td>
+            <td id="pr2">R$14,99</td>
+            <td id="tot2"></td>
+        </tr>
+        <tr>
+            <td>Farinha de Trigo</td>
+            <td><input type="number" placeholder="Quantidade" id="qtd3"></td>
+            <td>
+                <a href="https://www.superpaguemenos.com.br/farinha-de-trigo-renata-1kg/p">Comprar</a>
+            </td>
+            <td id="pr3">R$7,29</td>
+            <td id="tot3"></td>
+        </tr>
+        <tr>
+            <td>Fermento em Pó</td>
+            <td><input type="number" placeholder="Quantidade" id="qtd4"></td>
+            <td>
+                <a href="https://www.superpaguemenos.com.br/fermento-em-po-royal-100g/p">Comprar</a>
+            </td>
+            <td id="pr4">R$4,89</td>
+            <td id="tot4"></td>
+        </tr>
+        <tr>
+            <td>Manjericão</td>
+            <td><input type="number" placeholder="Quantidade" id="qtd5"></td>
+            <td>
+                <a href="https://www.hortifrutiorganico.com.br/inicio/20-manjericao-organico-maco.html">Comprar</a>
+            </td>
+            <td id="pr5">R$8,90</td>
+            <td id="tot5"></td>
+        </tr>
+        <tr>
+            <td>Parmesão Ralado</td>
+            <td><input type="number" placeholder="Quantidade" id="qtd6"></td>
+            <td>
+                <a href="https://www.superpaguemenos.com.br/queijo-parmesao-ralado-vigor-50g/p">Comprar</a>
+            </td>
+            <td id="pr6">R$7,29</td>
+            <td id="tot6"></td>
+        </tr>
+        <tr>
+            <td>Sal</td>
+            <td><input type="number" placeholder="Quantidade" id="qtd7"></td>
+            <td>
+                <a href="https://www.superpaguemenos.com.br/sal-refinado-cisne-1kg/p">Comprar</a>
+            </td>
+            <td id="pr7">R$2,99</td>
+            <td id="tot7"></td>
+        </tr>
+        <tr>
+            <td>Pimenta</td>
+            <td><input type="number" placeholder="Quantidade" id="qtd8"></td>
+            <td>
+                <a href="https://www.superpaguemenos.com.br/lemon-pepper-bombay-90g/p">Comprar</a>
+            </td>
+            <td id="pr8">R$21,90</td>
+            <td id="tot8"></td>
+        </tr>
+    </tbody>
+</table>
+    </center>
+    <br>
+    <hr>
+    <div>
+    <br>
+    <div class="caixa1">
+            <div id="carouselSalgado2" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block" src="salgados/pipoca.jpg" alt="Imagem de Pipoca 1" style="width: 600px;height: 500px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Deliciosa e Diferente</h5>
+                    <p>Veja como fazer no vídeo abaixo</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block" src="salgados/pipoca2.webp" alt="Imagem de Pipoca 2" style="width: 600px;height: 500px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Deliciosa e Diferente</h5>
+                    <p>Veja como fazer no vídeo abaixo</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block" src="salgados/pipoca3.webp" alt="Imagem de Pipoca 3" style="width: 600px;height: 500px;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Deliciosa e Diferente</h5>
+                    <p>Veja como fazer no vídeo abaixo</p>
+                  </div>
+                  </div>
+              </div>
+          
+              <a class="carousel-control-prev" href="#carouselSalgado2" role="button" data-slide="prev" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%);">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+          
+              <a class="carousel-control-next" href="#carouselSalgado2" role="button" data-slide="next" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div>
+    <h2>Pipoca Caramelizada Salgada</h2>
+        <h3>Ingredientes</h3>
+        <p>15 minutos | Serve 2</p>
+    <ul>
+        <li>1 pacote pipoca natural para microondas ou 100grs de milho para pipoca</li>
+        <li>1 xícara de chá de açúcar</li>
+        <li>40g manteiga sem sal</li>
+        <li>1/2 colher chá de bicarbonato de sódio</li>
+        <li>1 pitada flor de sal ou sal comum</li>
+    </ul>
+</div>
+    </div>
+    <div class="caixa1">
+        <div style="width: 50%;">
+        <h3>Instruções de cozinha</h3>
+    <ol>
+        <li>Estoure a pipoca conforme orientações da embalagem. Retire os grãos que não estouraram. Reserve em uma assadeira bem grande.</li>
+        <li>Em uma panela grande e alta, leve o açúcar ao fogo médio/ baixo mexendo ocasionalmente, até formar um caramelo dourado. Desligue o fogo e acrescente a manteiga e o bicarbonato, misturando rapidamente (vai espumar um pouco).</li>
+        <li>Despeje toda a pipoca reservada e misture tudo com uma espátula de silicone até cobrir toda a pipoca (cuidado para não se queimar). Precisa ser rápido, antes que o caramelo esfrie e endureça.</li>
+        <li>Despeje novamente na assadeira, espalhe e nivele cuidadosamente com a espátula. Salpique com flor de sal ou uma pitada de sal comum. Espere esfriar totalmente, separe as pipocas e guarde em sacos para congelar.</li>
+    </ol>
+    </div>
+    <div style="width: 50%;">
+    <p>Confira a releitura deste prato no vídeo abaixo!</p>
+    <iframe width="100%" height="280" src="https://www.youtube.com/embed/4bkYma0Vf7s?si=_FLGk9w9MFhcAWhe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    </div>
+    </div>
+    <center>
+<table id="aqui">
+
+        <tr>
+            <th>Ingrediente</th>
+            <th>Link de Compra</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Pipoca</td>
+            <td><a href="https://www.superpaguemenos.com.br/pipoca-para-microondas-yoki-com-sal-100g/p">Comprar</a></td>
+            <td><input type="number" placeholder="Preço" class="preco"></td>
+            <td><input type="number" placeholder="Quantidade" class="quantidade"></td>
+            <td class="total"></td>
+        </tr>
+        <tr>
+            <td>Açúcar</td>
+            <td><a href="https://www.superpaguemenos.com.br/acucar-refinado-uniao-1kg/p">Comprar</a></td>
+            <td><input type="number" placeholder="Preço" class="preco"></td>
+            <td><input type="number" placeholder="Quantidade" class="quantidade"></td>
+            <td class="total"></td>
+        </tr>
+        <tr>
+            <td>Manteiga sem Sal</td>
+            <td><a href="https://www.superpaguemenos.com.br/manteiga-extra-danone-com-sal-200g/p">Comprar</a></td>
+            <td><input type="number" placeholder="Preço" class="preco"></td>
+            <td><input type="number" placeholder="Quantidade" class="quantidade"></td>
+            <td class="total"></td>
+        </tr>
+        <tr>
+            <td>Bicarbonato</td>
+            <td><a href="https://www.superpaguemenos.com.br/bicarbonato-de-sodio-kitano-80g/p">Comprar</a></td>
+            <td><input type="number" placeholder="Preço" class="preco"></td>
+            <td><input type="number" placeholder="Quantidade" class="quantidade"></td>
+            <td class="total"></td>
+        </tr>
+        <tr>
+            <td>Sal</td>
+            <td><a href="https://www.superpaguemenos.com.br/sal-refinado-cisne-1kg/p">Comprar</a></td>
+            <td><input type="number" placeholder="Preço" class="preco"></td>
+            <td><input type="number" placeholder="Quantidade" class="quantidade"></td>
+            <td class="total"></td>
+        </tr>
+        <!--<td> do total final abaixo-->
+        <tr>
+            <td colspan="4">Total</td>
+            <td id="totalFinal"></td>
+        </tr>
+</table>
+
+<button onclick="calc()">Calcular</button>
+</center>
+    <br>
+    </div>
+    <hr>
+    <br>
+    <div class="caixa1">
+        <img src="salgados/bolo.jpg" alt="Imagem de um Bolo salgado de Frango">
+        <div>
+        <h2>Bolo Salgado de Frango</h2>
+        <h3>Ingredientes</h3>
+        <p>2 horas | 40 fatias</p>
+    <ul>
+        <li>1,2 kg frango desfiado (2,5 kg de frango C/ osso ou 2 kg S/osso)</li>
+        <li>2,5 pacotes pão de forma</li>
+        <li>2 tomates</li>
+        <li>750 G maionese</li>
+        <li>1 sachê de milho/ervilha</li>
+        <li>Meio sachê de azeitona</li>
+        <li>250 G batata palha</li>
+        <li>2 cenoura</li>
+        <li>3 batata</li>
+    </ul>
+        </div>
+    </div>
+    <div class="caixa1">
+        <div style="width: 50%;">
+        <h3>Instruções de cozinha</h3>
+    <ol>
+        <li>Cozinhe o frango por aproximadamente 30 minutos na pressão - em seguida quando sair toda pressão, desfie o frango.</li>
+        <li>Cozinhe a batata para fazer o purê.</li>
+        <li>Rale a cenoura, pique o tomate e misture os ingredientes no frango juntamente com a maionese. O peso total do recheio ficará aproximadamente 2 kg</li>
+        <li>Dívida o recheio em três porções e monte as bases com os pães de forma (de preferência dentro de uma forma) e recheie.</li>
+        <li>Depois desenforme o bolo. Cubra com o purê, em seguida com batata palha. E decore o bolo 🍰</li>
+    </ol>
+    </div>
+    <div>
+    <p>Confira a releitura deste prato no vídeo abaixo!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WpY4buTdsOU?si=EsZ7FZDZ-KouBceG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+        <center>
+<table>
+    <thead>
+        <tr>
+            <th>Ingrediente</th>
+            <th>Link de Compra</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Frango Desfiado</td>
+            <td>
+                <a href="https://www.superpaguemenos.com.br/peito-de-frango-desfiado-seara-400g/p">Comprar</a>
+            </td>
+            <td>R$17,98</td>
+        </tr>
+        <tr>
+            <td>Pão de Forma</td>
+            <td><a href="https://www.superpaguemenos.com.br/pao-de-forma-panco-500g/p">Comprar</a></td>
+            <td>R$8,69</td>
+        </tr>
+        <tr>
+            <td>Tomates</td>
+            <td><a href="https://www.superpaguemenos.com.br/tomate-carmem-kg/p">Comprar</a></td>
+            <td>R$4,99</td>
+        </tr>
+        <tr>
+            <td>Maionese</td>
+            <td><a href="https://www.superpaguemenos.com.br/maionese-hellmanns-500g/p">Comprar</a></td>
+            <td>R$8,90</td>
+        </tr>
+        <tr>
+            <td>Milho</td>
+            <td><a href="https://www.superpaguemenos.com.br/milho-verde-quero-lata-170g/p">Comprar</a></td>
+            <td>R$2,99</td>
+        </tr>
+        <tr>
+            <td>Azeitona</td>
+            <td><a href="https://www.superpaguemenos.com.br/azeitona-verde-tozzi-fatiado-80g/p">Comprar</a></td>
+            <td>R$4,99</td>
+        </tr>
+        <tr>
+            <td>Batata Palha</td>
+            <td><a href="https://www.superpaguemenos.com.br/batata-palha-yoki-105g-tradicional/p">Comprar</a></td>
+            <td>R$8,99</td>
+        </tr>
+        <tr>
+            <td>Cenoura</td>
+            <td><a href="https://www.superpaguemenos.com.br/cenoura-kg/p">Comprar</a></td>
+            <td>R$3,99</td>
+        </tr>
+        <tr>
+            <td>Batata</td>
+            <td><a href="https://www.superpaguemenos.com.br/batata-kg/p">Comprar</a></td>
+            <td>R$4,99</td>
+        </tr>
+    </tbody>
+</table>
+</center>
+    <br>
+    <footer>
+        <h5>&copy; 2024 produzido por Yan Ietka. Todos os direitos reservados</h5>
+    </footer>
+</body>
+</html>
