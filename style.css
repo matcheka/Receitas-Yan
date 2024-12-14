@@ -68,6 +68,7 @@ menu{
     background-color: #22784f;
     margin: 30px;
     padding: 1%;
+    height: 1150px;
 }
 .caixa1{
     padding: 15px;
@@ -95,19 +96,12 @@ div{
     align-items: center;
     gap: 1rem;
 }
-.card1:hover {
-    width: 30%;
-    height:650px;
-    background-color: #005544;
+.card1:hover,.card2:hover,.card3:hover {
+    .card-body{
+        background-color: #005544;
+    }
 }
-.card2:hover {
-    width: 30%;
-    height: 650px;
-    background-color: #005544;
-}
-.card3:hover {
-    width: 30%;
-    height: 650px;
+.card-body:hover{
     background-color: #005544;
 }
 hr{
